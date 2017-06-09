@@ -27,7 +27,7 @@ class IBElementDBManager extends IBEntityDBManager
 
     public function setPropertyValue($elemId, $iblockId, $propCode, $value)
     {
-        $this->oldEntityInstance->setPropertyValues($elemId, $iblockId, $value, $propCode);
+        $this->oldEntityInstance->setPropertyValuesEx($elemId, $iblockId, $value, $propCode);
     }
 
     public function getProperty($elemId, $propCode, $iblockId)
